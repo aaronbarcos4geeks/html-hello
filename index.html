@@ -51,7 +51,6 @@
         </div>
     </nav>
 
-    <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -107,8 +106,7 @@
             </div>
         </div>
 
-        <!-- Contenedor de imágenes -->
-        <div id="imageContainer" class="row row-cols-1 row-cols-md-3 g-4">
+        <div id="imageContainer" class="row row-cols-1 row-cols-md-3 g-4 mx-2 mx-lg-5">
             <div class="col">
                 <div class="card">
                     <div class="d-none card-header bg-transparent border-success">Photo Title</div>
@@ -234,7 +232,7 @@
             gridViewBtn.style.fill = 'blue';
             columnViewBtn.style.fill = 'black';
             imageContainer.classList.remove('d-flex', 'flex-column', 'container', 'gap-3');
-            imageContainer.classList.add('row', 'row-cols-1', 'row-cols-md-3', 'g-4');
+            imageContainer.classList.add('row', 'row-cols-1', 'row-cols-md-3', 'g-4', 'mx-2', 'mx-lg-5');
             cardHeaders.forEach(cardHeader => {
                 cardHeader.classList.add('d-none');
             });
@@ -246,7 +244,7 @@
         columnViewBtn.addEventListener('click', () => {
             gridViewBtn.style.fill = 'black';
             columnViewBtn.style.fill = 'blue';
-            imageContainer.classList.remove('row', 'row-cols-1', 'row-cols-md-3', 'g-4');
+            imageContainer.classList.remove('row', 'row-cols-1', 'row-cols-md-3', 'g-4', 'mx-2', 'mx-lg-5');
             imageContainer.classList.add('d-flex', 'flex-column', 'container', 'gap-3');
             cardHeaders.forEach(cardHeader => {
                 cardHeader.classList.remove('d-none');
@@ -256,10 +254,6 @@
             });
         });
     </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>
